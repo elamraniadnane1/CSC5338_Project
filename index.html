@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Table Ordering System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <header>
+    <div class="header-container">
+        <img src="logo.png" alt="Café Siempre Logo" class="cafe-logo" />
+        <h1>Café Siempre</h1>
+        <!-- Personalized Welcome Message -->
+        <div class="welcome-message">
+            <p>Welcome back, <span class="user-email">a.elamrani@aui.ma</span>!</p>
+        </div>
+        <nav class="header-nav">
+            <button id="languageButton" class="btn-lang">
+                <i class="fas fa-language"></i> Change Language
+            </button>
+            <!-- You can add more buttons or navigation links here if needed -->
+        </nav>
+    </div>
+    <div class="header-banner">
+        <p>Enjoy the finest culinary experiences!</p>
+    </div>
+</header>
+
+    <nav>
+        <button id="homeButton"><i class="fas fa-home"></i> Home</button>
+        <button id="menuButton"><i class="fas fa-utensils"></i> Menu</button>
+        <button id="orderButton"><i class="fas fa-receipt"></i> Your Order</button>
+        <button id="callWaiterButton"><i class="fas fa-bell"></i> Call Waitstaff</button>
+    </nav>
+
+    <main>
+       <!-- Smart Table Interaction Notification -->
+        <section id="smartTableInteraction">
+            <h2><i class="fas fa-robot"></i> Smart Table Interaction</h2>
+            <p>👋 Hey there! I'm your Smart Table. I can see and interact with you. Let's make your dining experience memorable!</p>
+        </section>
+        <section id="accessibility">
+            <h2><i class="fas fa-wheelchair"></i> Accessibility Options</h2>
+            <button id="textSizeButton"><i class="fas fa-text-height"></i> Adjust Text Size</button>
+            <button id="voiceCommandButton"><i class="fas fa-microphone"></i> Issues with Voice Commands ?</button>
+        </section>
+        <section id="menu">
+            <h2><i class="fas fa-book-open"></i> Menu</h2>
+            <!-- Menu items would be dynamically loaded here -->
+        </section>
+
+        <section id="mealAvailability">
+            <h2><i class="fas fa-concierge-bell"></i> Meal Availability</h2>
+            <p>Check out which dishes are not available right now!</p>
+            <!-- Meal availability details will be dynamically loaded here -->
+        </section>
+
+        <section id="arVisualization">
+            <h2><i class="fas fa-vr-cardboard"></i> AR Menu Visualization</h2>
+            <p>Explore our dishes in Augmented Reality</p>
+            <!-- AR functionality placeholder -->
+            <button id="arButton"><i class="fas fa-eye"></i> View in AR</button>
+        </section>
+
+        <section id="order">
+            <h2><i class="fas fa-shopping-cart"></i> Your Order</h2>
+            <!-- Current order summary and options to edit or confirm order -->
+        </section>
+
+        <section id="callWaiter">
+            <h2><i class="fas fa-hands-helping"></i> Need Assistance?</h2>
+            <button id="helpButton"><i class="fas fa-question-circle"></i> Call for Help</button>
+        </section>
+
+        
+      <section id="smartphoneConnect">
+          <h2><i class="fas fa-mobile-alt"></i> Connect With Your Smartphone</h2>
+          <p>Scan the QR code or tap your phone to connect with our Smart Table.</p>
+          <img src="qr-code-placeholder.png" alt="QR Code to Connect" class="qr-code-image"/>
+          <!-- Optionally, instructions for NFC can be added here -->
+      </section>
+      <section id="chefsSpecial">
+          <h2><i class="fas fa-star"></i> Chef's Special</h2>
+          <p>Discover today's special curated by our chef!</p>
+          <div id="specialItem">Loading special item...</div>
+          <!-- Placeholder for dynamic content loading -->
+      </section>
+
+      <section id="liveFeed">
+          <h2><i class="fas fa-hashtag"></i> Live Social Feed</h2>
+          <p>See what our customers are saying on social media!</p>
+          <div id="socialFeed">
+              <!-- Social media feed content -->
+          </div>
+      </section>
+
+      <section id="gallery">
+          <h2><i class="fas fa-images"></i> Gallery</h2>
+          <p>Explore our restaurant's ambiance and signature dishes.</p>
+          <div class="gallery-container">
+              <!-- Images or a carousel of the restaurant and dishes -->
+          </div>
+      </section>
+
+
+      <section id="feedbackForm">
+          <h2><i class="fas fa-comments"></i> Share Your Experience</h2>
+          <form id="feedback">
+              <textarea placeholder="Leave your feedback here..."></textarea>
+              <button type="submit"><i class="fas fa-paper-plane"></i> Submit</button>
+          </form>
+      </section>
+      
+
+    </main>
+
+  <footer>
+    <p><i class="fas fa-heart"></i> Thank you for dining with us!</p>
+    <div class="social-media-icons">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <!-- More icons as needed -->
+    </div>
+  </footer>
+  </body>
+  </html>
